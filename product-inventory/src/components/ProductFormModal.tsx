@@ -109,7 +109,7 @@ export default function ProductFormModal({
             <label className="block font-medium">Price</label>
             <input
               name="price"
-              type="number"
+              type="text"
               value={form.price}
               onChange={handleChange}
               className="border px-3 py-2 rounded w-full"
