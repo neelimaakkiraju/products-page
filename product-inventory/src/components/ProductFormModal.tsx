@@ -10,7 +10,8 @@ interface Props {
   categories: string[];
 }
 
-const initialState = {
+const initialState: Product = {
+  id: "",
   name: "",
   sku: "",
   price: 0,
@@ -26,11 +27,11 @@ export default function ProductFormModal({
   existingSkus,
   categories,
 }: Props) {
-  const [form, setForm] = useState<Product>(product || initialState);
+  const [form, setForm] = useState<Product>(product ?? initialState);
   const [errors, setErrors] = useState<Record<string, string>>({});
 
   React.useEffect(() => {
-    setForm(product || initialState);
+    setForm(product ?? initialState);
     setErrors({});
   }, [product, open]);
 

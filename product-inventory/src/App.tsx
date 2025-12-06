@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import type { Product } from "./types";
 import { useProducts } from "./hooks/useProducts";
 import ProductCard from "./components/ProductCard";
